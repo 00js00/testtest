@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="./css/ams.css" type="text/css">
+<title></title>
+</head>
+
+<body>
+1234123
+<p>용혀니 커밋을 위한 test Text 아니야</p>
+  <header>
+      <h1 id="pj-title">계좌번호 리스트</h1>
+  </header>
+  <div id="main-ams">
+      <div class="ams-info-row">
+        <div class="ams-label">계좌종류</div>
+        <ul>
+        <li class="total">
+          <select name="account" id="account">
+              <option value="general">입출금</option>
+              <option value="minus">마이너스</option>
+          </select>
+        </li>
+        </ul>
+      </div>
+      <div class="ams-info-row">
+        <div class="ams-label">계좌번호</div>
+        <ul>
+            <li class="ams-input-prop total"><input type="text" name="user_id" required="required"></li>
+            <li class="total"><input type="button" class="total-btn" value="조회"></li>
+            <li class="total"><input type="button" class="total-btn" value="삭제"></li>
+        </ul>
+      </div>
+      <div class="ams-info-row">
+        <div class="ams-label">예금주명</div>
+        <ul>
+            <li class="ams-input-prop total"><input type="text" name="user_id" required="required"></li>
+            <li class="total"><input type="button" class="total-btn" value="검색"></li>
+        </ul>
+      </div>
+      <div class="ams-info-row">
+        <div class="ams-label">비밀번호</div>
+        <ul>
+            <li class="ams-input-prop total"><input type="text" name="user_id" required="required"></li>
+            <li class="total">입금금액</li>
+            <li class="total"><input type="text" name="user_id" required="required"></li>
+        </ul>
+      </div>
+      <div class="ams-info-row">
+        <div class="ams-label">대출금액</div>
+        <ul>
+            <li class="ams-input-prop total"><input type="text" name="user_id" required="required"></li>
+            <li class="total"><input type="button" class="total-btn" value="신규등록"></li>
+            <li class="total"><input type="button" class="total-btn" value="전체조회"></li>
+        </ul>
+      </div>
+      
+      <!-- 계좌목록을 보여주는 테이블 -->
+      <div id="table-label-clear">
+        <span class="table-label">계좌목록</span>  
+        <span class="table-label" id="account-unit">단위(원)</span>
+      </div>
+      <div>
+        <table border="1" id="table-main">
+          <thead id="table-header">
+            <tr>
+              <td>계좌종류</td>
+              <td>계좌번호</td>
+              <td>예금주명</td>
+              <td>현재잔액</td>
+              <td>대출금액</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>입출금</td>
+              <td>1111-2222</td>
+              <td>김용현</td>
+              <td>5000</td>
+              <td>200000</td>
+            </tr>
+            <tr>
+              <td>입출금</td>
+              <td>1111-2222</td>
+              <td>김용현</td>
+              <td>5000</td>
+              <td>200000</td>
+            </tr>
+            <tr>
+              <td>입출금</td>
+              <td>1111-2222</td>
+              <td>김용현</td>
+              <td>5000</td>
+              <td>200000</td>
+            </tr>
+            <tr>
+              <td>입출금</td>
+              <td>1111-2222</td>
+              <td>김용현</td>
+              <td>5000</td>
+              <td>200000</td>
+            </tr>
+          </tbody>
+
+        </table>
+      </div>
+  </div>
+</body>
+</html>
